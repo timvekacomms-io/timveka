@@ -54,7 +54,7 @@ const app = express()
 const server = http.createServer(app)
 
 const port = process.env.PORT || 4000
-const HOST = 0.0.0.0
+const HOST = "0.0.0.0"
 
 const io = new Server(server)
 
