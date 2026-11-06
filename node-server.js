@@ -54,6 +54,7 @@ const app = express()
 const server = http.createServer(app)
 
 const port = process.env.port || 4000
+const HOST = 0.0.0.0
 
 const io = new Server(server)
 
@@ -429,4 +430,6 @@ app.get('/get-all-tracks', async(request,response)=>{
 	}
 })
 
-app.listen(port)
+app.listen(port, HOST, () => {
+    console.log(`Server running on port ${PORT}`);
+})
