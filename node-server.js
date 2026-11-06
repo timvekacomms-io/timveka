@@ -57,7 +57,6 @@ const port = process.env.port || 4000
 
 const io = new Server(server)
 
-import getDimensions from 'get-video-dimensions';
 
 const tempDir = path.join(__dirname+"/TempHls")
 
