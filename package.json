@@ -7,7 +7,7 @@
   "type": "module",
   "main": "node-server.js",
   "scripts": {
-    "start": "node-server.js"
+    "start": "node node-server.js"
   },
   "dependencies": {
     "abort-controller": "^3.0.0",
