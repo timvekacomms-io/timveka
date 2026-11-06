@@ -19,7 +19,7 @@
   "type": "module",
   "main": "node-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node-server.js"
   },
   "dependencies": {
     "@cozycodr/lipila": "^0.1.0",
