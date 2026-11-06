@@ -1,5 +1,4 @@
 
-import 'dotenv/config'; // Automatically loads the .env file
 import path from 'path'
 import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
