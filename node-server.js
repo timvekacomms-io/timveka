@@ -2,7 +2,7 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
-//const __dirname = "/var/data/"
+const __dirname = "/var/data/"
 import http from 'http'
 const bodyparser = import("body-parser")
 const mv = import("mv")
@@ -16,7 +16,7 @@ import cors from 'cors';
 import {spawn} from "child_process";
 import dns from 'dns'
 import { MongoClient } from 'mongodb'
-
+/*
 let __dirname;
 
 // 1. Safely emulate __dirname depending on your module system
@@ -36,7 +36,7 @@ export function getProjectRoot(startDir = currentDir) {
   return startDir; // Fallback to current directory if not found
 }
 
-__dirname = getProjectRoot()
+__dirname = getProjectRoot()*/
 
 const mongoClient = new MongoClient('mongodb+srv://shopmatesales:N6Npa7vcMIaBULIS@cluster0.mgv7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { monitorCommands: true });
 mongoClient.connect()// Enable command monitoring for debugging
