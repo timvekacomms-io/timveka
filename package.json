@@ -7,13 +7,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timvekacomms-io/timveka"
-  },
+    "url": "git+https://github.com"
+  ],
   "bugs": {
-    "url": "https://github.com/timvekacomms-io/timveka/issues"
+    "url": "https://github.com/issues"
   },
-  "homepage": "https://github.com/timvekacomms-io/timveka#readme"
-  
+  "homepage": "https://github.com#readme",
   "license": "ISC",
   "author": "Criterion Programming",
   "type": "module",
@@ -32,14 +31,11 @@
     "dotenv": "^16.6.1",
     "express": "^4.21.1",
     "express-fileupload": "^1.5.1",
-    "fs": "0.0.1-security",
     "get-video-dimensions": "^1.0.0",
-    "http": "0.0.1-security",
     "mongodb": "^5.1.0",
     "mongoose": "^7.8.11",
     "move-file": "^3.1.0",
     "mv": "^2.1.1",
-    "node": "20.15.0",
     "node-fetch": "^3.3.2",
     "nodemailer": "^9.0.3",
     "nodemon": "^3.1.7",
@@ -56,6 +52,6 @@
     "webpack-cli": "^5.1.4"
   },
   "engines": {
-    "node": "20.15.0"
+    "node": ">=22.0.0"
   }
 }
