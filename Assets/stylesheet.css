@@ -1,0 +1,2109 @@
+*{
+	cursor: pointer;
+	outline: none;
+	transition: all linear 200ms;
+}
+p{
+	font-family: Calibri
+}
+body{
+	overflow: hidden
+}
+
+#paymentWindow{
+	 background: white;
+	 width: 62%;
+	border-radius: 12px;
+	box-shadow: 0px 3px 7px black;
+	height: 80%;
+	margin-top:300%;
+	margin-left: 19%;
+	 overflow: hidden;
+	 display: none;
+	 opacity: 0;
+	 position: fixed;
+	 z-index: 15;
+}
+
+#customBeatsList{
+	width:100%;
+	float:left;
+	
+	margin-top: 1%;
+	height: 50%;
+}
+
+.windowDsp{
+	width:100%;
+	height:82%;
+	position:fixed;
+	z-index: 12;
+	margin-top: -8px;
+	margin-left: -2px;
+	background: linear-gradient(180deg, white 89%, black 100%);
+}
+
+#mainMenu{
+	float:left;
+	position:fixed;
+	height: 101%;
+	width:21%;
+	box-shadow: 3px 0px 7px black;
+	background: white;
+	z-index: 18;
+	margin-left: -23%;
+	opacity: 0;
+	margin-top: -9px;
+}
+#customMenus{
+	float:left;
+	position:fixed;
+	height: 101%;
+	width:21%;
+	box-shadow: 3px 0px 7px black;
+	background: white;
+	z-index: 18;
+	margin-left: -23%;
+	opacity: 0;
+	margin-top: -9px;
+}
+#alertWindow{
+	 float:left;
+	 width: 40%;
+	 margin-left:30%;
+	 background:white;
+	 border-radius:12px;
+	 box-shadow: 0px 2px 3px black;
+	 margin-top:300%;
+	 opacity: 0;
+	 position: fixed;
+		z-index: 12;
+}
+#alertMessage{
+	float:left;
+	width:100%;
+	color:grey;
+	font-weight:bolder;
+	text-align:center;
+	padding: 0px;
+	margin-top: 2%;
+	margin-bottom: 0px
+}
+
+#closeAlert{
+	float:left;
+	width:20%;
+	height:30px;
+	border-radius:15px;
+	border:none;
+	box-shadow: 0px 2px 3px black;
+	background:grey;
+	margin-left:40%;
+	margin-top:2%;
+	margin-bottom:2%;
+	color: white;
+}
+
+#promptWindow{
+	float:left;
+	width: 40%;
+	margin-left:30%;
+	background:white;
+	border-radius:12px;
+	box-shadow: 0px 2px 3px black;
+	margin-top:300%;
+	opacity: 0;
+	position: fixed;
+	z-index: 13
+}
+
+#promptMessage{
+	float:left;
+	width:100%;
+	color:grey;
+	font-weight:bolder;
+	text-align:center;
+	padding: 0px;
+	margin-top: 2%;
+	margin-bottom: 0px
+}
+
+#yesBtn{
+	float:left;
+	width:20%;
+	height:30px;
+	border-radius:15px;
+	border:none;
+	box-shadow: 0px 2px 3px black;
+	background:grey;
+	margin-left:29%;
+	margin-top:2%;
+	margin-bottom:2%;
+	color: white;
+}
+#noBtn{
+	float:left;
+	width:20%;
+	height:30px;
+	border-radius:15px;
+	border:none;
+	box-shadow: 0px 2px 3px black;
+	background:grey;
+	margin-left:2%;
+	margin-top:2%;
+	margin-bottom:2%;
+	color: white;
+}
+
+#loadingWindow{
+	float:left;
+	position:fixed;
+	z-index: 14;
+	background: white;
+	border-radius:12px;
+	box-shadow:0px 2px 3px black;
+	margin-top:300%;
+	margin-left: 30%;
+	width: 40%;
+	opacity:0
+}
+#loadingGif{
+	float:left;
+	width:7%;
+	margin-left: 46%;
+	margin-top: 2%;
+	margin-bottom: 20px
+}
+#loadingMessage{
+	width:100%;
+	float:left;
+	color:grey;
+	font-weight:bolder;
+	text-align: center;
+	padding: 0px;
+	margin-top: 2%;
+	margin-bottom: 0px
+}
+
+#dialogBackground{
+	float:left;
+	background: #11111178;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	display: block;
+	opacity:1;
+	margin-left: -3px;
+	margin-top: -8px;
+}
+.nextPrevTrack{
+	float:left;
+	width: 28px;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+#logoHolder{
+	float: left;
+	width: 60px;
+	height:60px;
+	border-radius: 30px;
+	margin-left: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	box-shadow: 0px 2px 3px black;
+	overflow: hidden
+}
+#header-section{
+	float:left;
+	position: fixed;
+	background: grey;
+	width: 100%;
+	box-shadow: 0px 2px 3px black;
+	background: linear-gradient(180deg, #cfcab7 30%,#f5f5dc 50%);
+}	
+#logoImage{
+	width: 100%;
+	height: 100%
+}
+#menuBtn{
+	float:right;
+	width: 35px;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+#beatListSection{
+	float:left;
+	width: 100%;
+	margin-top: 0.8%;
+}
+#resultIndicator{
+	float:left;
+	width: 100%;
+	text-align: center;
+	color: grey;
+	display: none;
+}
+#playerSection{
+	position: fixed;
+	float: left;
+	width: 100%;
+	font-size: 1.0rem;
+	font-family: Calibri;
+	margin-top: 37.7%;
+	margin-bottom: 0px;
+	background:black;
+	text-align: center;
+	z-index: 14;
+	height: 19%;
+	margin-left: -2px;
+}
+#trackName{
+	
+	float: left;
+	width: 100%;
+	font-size: 1.0rem;
+	font-family: Calibri;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	color:white;
+	text-align: center
+}
+#prodName{
+	float: left;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: Calibri;
+  margin-top: 2px;
+  margin-bottom: 0px;
+	color:white;
+	text-align: center
+}
+#seekbar{
+	
+	float: left;
+	width: 90%;
+	margin-left: 21px;
+	margin-bottom: 0px;
+}
+#playerTime{
+	
+	float: left;
+	font-family: Calibri;
+	font-weight: bolder;
+	color: white;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+#controlsSection{
+	
+}
+#prevTrack{
+	
+	margin-left: 46%;
+}
+#playPauseBtn{
+	
+	float: left;
+	width: 35px;
+	margin-top: 5px;
+	margin-left: 9px;
+}
+#nextTrack{
+	
+}
+.buySection{
+	
+	float: left;
+	width: 9%;
+	background: linear-gradient(180deg,#ada0a0 30%, #494545 70%);
+	margin-left: 2px;
+	height: 62px;
+	opacity: 1;
+}
+
+.listObject{
+	
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	height: 101px;
+	box-shadow: 0px 2px 7px black;
+	border-radius: 12px;
+	margin-top: 22px;
+	transition: all linear 70ms;
+}
+.listObject2{
+	
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	height: 101px;
+	box-shadow: 0px 2px 7px black;
+	border-radius: 12px;
+	margin-top: 7px;
+}
+.listMenuBtn{
+	float: right;
+	width: 20px;
+	margin-right: 8px;
+	margin-top: 5px;
+}
+.artworkHolder{
+	
+	float: left;
+	width: 80px;
+	margin-left: 9px;
+	height: 80px;
+	border-radius: 12px;
+	box-shadow: 0px 3px 7px black;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.artworkHolder2{
+	float: left;
+	width: 80px;
+	margin-left: 9px;
+	height: 80px;
+	border-radius: 12px;
+	box-shadow: 0px 3px 7px black;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.artworkImage{
+	
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.detailsSection{
+	
+	float: left;
+	width: 81%;
+	margin-left: 21px;
+	height: 100%;
+	background: none;
+}
+.detailsSection2{
+	
+	float: left;
+	width: 89%;
+	margin-left: 21px;
+	height: 100%;
+	background: none;
+}
+
+#profileImageHolder{
+	float:left;
+	width: 100px;
+	height: 100px;
+	margin-left: 3%;
+	margin-top: 2%;
+	border-radius: 50px;
+	box-shadow: 0px 0px 7px black;
+	overflow: hidden
+}
+
+#bty{
+	height:100%;
+	background: none;
+	border-left: 1px solid grey;
+	margin-left: 1%;
+	opacity: 1;
+}
+
+
+
+.beatPrice{
+	
+	float: left;
+	font-size: 14px;
+	color: white;
+	font-weight: bolder;
+	width: 100%;
+	text-align: center;
+	margin-top: 1px;
+	margin-bottom: 0px;
+	text-shadow: 0px 2px 3px black;
+}
+.buyNowBtn{
+	
+	float: left;
+	border-radius: 20px;
+	height: 26px;
+	margin-top: 5px;
+	margin-left: 12%;
+	border: 3px solid white;
+	background: none;
+	color: white;
+	font-weight: bolder;
+	width: 97px;
+}
+.beatPrice2{
+	
+	float: left;
+	font-size: 1.1rem;
+	color: black;
+	font-weight: bolder;
+	width: 100%;
+	text-align: center;
+	margin-top: 17px;
+	margin-bottom: 0px;
+	font-family: Calibri
+}
+.buyNowBtn2{
+	
+	float: left;
+	border-radius: 20px;
+	height: 26px;
+	margin-top: 5px;
+	margin-left: 12%;
+	border: 3px solid black;
+	background: none;
+	color: black;
+	font-weight: bolder;
+	width: 97px;
+	font-family: Calibri
+}
+#playerBty{
+	margin-left: 35%;
+	padding-bottom: 1%;
+	margin-top: 1px;
+	height: 47px;
+}
+
+/*Sections*/
+
+#mainPage{
+	float: left;
+	display: block;
+	opacity: 1;
+	overflow-y: scroll;
+}
+
+#specificBeatWindow{
+	float: left;
+	display: none;
+	opacity: 0
+}
+#customBeatStore{
+	float: left;
+	display: none;
+	opacity: 0
+}
+#customOrdersInput{
+	float: left;
+	display: none;
+	opacity: 0
+}
+#customOrdersCollect{
+	float: left;
+	display: none;
+	opacity: 0
+}
+#clientHistory{
+	float: left;
+	display: none;
+	opacity: 0
+}
+#zambianOffer{
+	float: left;
+	display: none;
+	opacity: 0
+}
+#intlOffer{
+	float: left;
+	display: none;
+	opacity: 0
+}
+
+/*Custom Store Section*/
+#cs-top-header{
+	
+	float:left;
+	position: fixed;
+	background: grey;
+	width: 100%;
+	box-shadow: 0px 2px 3px black;
+	background: linear-gradient(180deg, #cfcab7 80%,#f5f5dc 100%);
+	
+}
+#profileImageHolder{
+	float:left;
+	width: 100px;
+	height: 100px;
+	margin-left:10px;
+	margin-top:10px;
+	border-radius:50px;
+	box-shadow: 0px 2px 3px black;
+	overflow: hidden
+}
+#profileImage{
+	width: 100%;
+	height: 100%
+}
+#producerName{
+	
+	float:left;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	text-shadow: 0px 2px 3px black;
+	color: white;
+	
+	width: 83%;
+	margin-left: 4%;
+}
+.metricBtn{
+	float:left;
+	width: 20px;
+	margin-left: 36px;
+	margin-top: 21px;
+}
+.metricsText{
+	float:left;
+	color:white;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 7px
+}
+#playAllSect{margin-top: -13px;}
+#playAllIcon{float: left;width: 30px;margin-left: 4%;}
+#playAllBtn{float: left;color: white;text-shadow: 0px 0px 3px black;font-weight: bold;margin-top: 5px;margin-left: 8px;}
+#metrics{float: left;width: 100%;margin-top: -15px;}
+#voteIcon{margin-left: 12%;}
+#votesCount{text-shadow: 0px 0px 6px black;}
+#playsIcon{}
+#playsCount{text-shadow: 0px 0px 6px black;}
+#connectIcon{}
+#connectBtn{text-shadow: 0px 0px 5px black;}
+#prod-menuBtn{
+	float: right;
+	width: 30px;
+	margin-right: 2%;
+	margin-top: 10px;
+}
+#editProfileimageHolder{
+	float:left;
+	width: 20px;
+	height: 20px;
+	border-radius: 9px;
+	box-shadow: 0px 2px 3px black;
+	overflow: hidden;
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 6%;
+	background: white;
+}
+#editProfileImage{
+	width: 18px;
+	height: 18px;
+	margin-left: 2px;
+}
+/*Client Section*/
+#client-header-section{
+	float:left;
+	width: 100%;
+	background:linear-gradient(180deg, #cfcab7 30%,#f5f5dc 50%);
+	height: 121px;
+	box-shadow: 0px 2px 7px black;
+}
+#client-profileImageHolder{
+	float:left;
+	overflow:hidden;
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+	box-shadow: 0px 2px 7px black;
+	margin-top: 2%;
+	margin-left:2%
+}
+#client-profileImage{
+	float:left;
+	width:100%;
+	height: 100%
+}
+#clientName{
+	float:left;
+	color: white;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	margin-top: 3.5%;
+	margin-left: 2%;
+	text-shadow: 0px 2px 4px black;
+}
+#client-menu-btn{
+	float: right;
+	margin-right: 2%;
+	margin-top: 3%;
+	width: 30px;
+}
+#client-category-section{
+	float:right;
+	width: 13%;
+}
+#client-cat-drop-down{
+	float:right;
+	width: 20px;
+	margin-right: 14%;
+	margin-top:9%;
+}
+#client-cat-text{
+	float: right;
+	margin-right: 5%;
+	font-weight: bold;
+	color: black;
+	font-size: 1.0rem
+}
+#client-history-list{
+	float:left;
+	width: 100%;
+	height: 64%;
+	background:none;
+}
+
+/*Ad Controller*/
+.addSection{
+	width:100%;
+	float:left;
+	margin-top:4%;
+}
+.addSection2{
+	width:100%;
+	float:left;
+	margin-top:11%;
+}
+
+#closeBtn{
+	float:left;
+	margin-left: 1%;
+	margin-top: 2%;
+	width: 45px;
+}
+#adMobSection{
+	float:left;
+	width: 50%;
+	display: block;
+	opacity: 1;
+	border-radius:12px;
+	box-shadow: 0px 0px 7px black;
+	margin-top: 1%;
+	margin-left: 19%;
+	position: fixed;
+	z-index: 11;
+}
+#admobCountSection{
+	float: left;
+	position:fixed;
+	background: gray;
+	color:white;
+	height: 40px;
+	width: 100px;
+	margin-left: 47%;
+}
+#adMobSecondCount{
+	width: 100%;
+	font-align:center;
+	text-shadow: 0px 0px 1px black;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-weight: bolder;
+	color: white;
+}
+#orderSct{
+	float:right;
+	width: 15%;
+}
+#orderIcon{
+	float:right;
+	margin-right:15%;
+	width: 30px
+}
+#orderBtn{
+	float:right;
+	margin-right:2%;
+	color: white;
+	font-weight: bolder;
+	margin-top: 2%;
+	margin-right: 6%;
+	text-shadow: 0px 0px 8px black;
+	margin-bottom: 0px;
+}
+#editSect{
+	float:left;
+	margin-left:82%;
+	width: 18%;
+}
+#editIcon{
+	float:right;
+	margin-right:15%;
+	width: 14px;
+	margin-top: 8px;
+}
+#editBtn{
+	float:right;
+	margin-right:2%;
+	color: white;
+	font-weight: bolder;
+	margin-top: 2%;
+	font-size: 0.8rem;
+	margin-top: 7px;
+	margin-bottom: 3px;
+	text-shadow: 0px 0px 6px black;
+}
+
+#xee{
+	margin-left: 2%;
+	box-shadow: 0px 2px 3px black;
+	width: 162px;
+	height: 300px;
+	margin-top: opx;
+}
+#paymentSelectorSection{
+	
+	float: right;
+	width: 78%;
+	background: white;
+	display: none;
+	opacity: 0;
+	margin-top: -35%;
+	margin-right: 0%;
+	height: 99%;
+}
+#paymentDetailsSection{
+	float:right;
+	width: 76%;
+	display: block;
+	opacity: 1;
+	margin-top: -35%;
+	height: 99%;
+	overflow-y: scroll;
+	margin-right: 1%;
+	overflow-x: hidden;
+}
+
+#payment-profile-image-holder{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	box-shadow: 0px 2px 3px black;
+	float: left;
+	overflow: hidden;
+	margin-left: 42%;
+	margin-right: 45%;
+}
+#payment-profile-image{
+	width: 100%;
+	height: 100%
+}
+#payment-profile-ins{
+	width: 100%;
+	float:left;
+	text-align: center;
+	color:grey;
+	margin-top:15px;
+	margin-bottom: 0px;
+	font-size: 0.7rem;
+}
+#selectOptionHeader{
+	width: 100%;
+	font-size: 1.0rem;
+	color: grey;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom:0px
+}
+
+.paymentOptionHolder{
+	float:left;
+	width: 100px;
+	height: 100px;
+	border-radius: 12px;
+	box-shadow: 0px 2px 3px black;
+	margin-left: 3%;
+	margin-top: 5%;
+}
+.paymentOptionBtn{
+	float: left;
+	width: 100%;
+	height: 100%
+}
+#atmHolder{
+	margin-left: 23%;
+}
+#mtnHolder{
+	margin-right: 24%;
+}
+#amountDueHeader{
+	float: left;
+	font-weight: bolder;
+	font-size: 2.2rem;
+	margin-left: 19%;
+	margin-bottom: 0px;
+	margin-top: 37px;
+}
+#amountDueValue{
+	float: left;
+	font-weight: bolder;
+	font-size: 3.0rem;
+	margin-left: 2%;
+	color: #b88b45;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+#transactionNarration{
+	float:left;
+	width:60%;
+	margin-left: 20%;
+	margin-bottom: 0px;
+	margin-top: 6%;
+}
+.signUpBtn{
+	width: 30%;
+	margin-left: 35%;
+	height: 38px;
+	color: white;
+	background: linear-gradient(180deg, blue 30%, #5d5dff 80%);
+	border-radius: 19px;
+	margin-top: 2%;
+	margin-right: 30%;
+	margin-bottom: 12%;
+}
+#payment_details_ins{
+	float:left;
+	width: 100%;
+	color:#b88b45;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	margin-top: 1%;
+	margin-bottom: 0px
+}
+#payment_details_note{
+	float: left;
+	width: 60%;
+	font-size: 0.8rem;
+	margin-left: 20%;
+	text-align: center;
+	margin-top: 1%;
+	margin-right: 20%;
+}
+.inputField{
+	float:left;
+	width: 80%;
+	margin-left:10%;
+	margin-top: 2%;
+	height: 6%;
+}
+#dobSection{
+	float:right;
+	width: 21%;
+	margin-right: 8%;
+}
+#mainDateText{
+	float: right;
+	font-weight: bolder;
+	width: 100%;
+	margin-bottom: 0px
+}
+#mainDateIns{
+	float: right;
+	font-weight: lighter;
+	width: 100%;
+	margin-top: 0px;
+	color:grey;
+	font-size:0.8
+}
+#countryBtnHolder{
+	float: left;
+	background: linear-gradient(180deg, blue 30%, #5d5dff 80%);
+	border-radius: 15px;
+	height: 30px;
+	margin-left: 10%;
+	margin-top: 2%;
+	width: 34%;
+}
+#countryBtn{
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin-top: 4px;
+	margin-bottom:0px;
+}
+#selectDateHeader{
+	float:left;
+	font-weight: bolder;
+	margin-top: 2%;
+	margin-left: 69%;
+	width: 43%;
+	margin-top: 5%;
+	margin-bottom: 0px;
+	color: #b88b45;
+}
+#prefCurrencyHeader{
+	float:left;
+	font-weight: bolder;
+	margin-top: 2%;
+	margin-left: 10%;
+	width: 43%;
+	margin-top: 5%;
+	margin-bottom: 0px;
+	color: #b88b45;
+}
+.searchSection{
+	float:left;
+	width: 100%;
+	height: 41px;
+	background: black;
+	margin-top: 6.5%;
+}
+.searchSection2{
+	float:left;
+	width: 100%;
+	height: 38px;
+	background: black;
+	margin-top: 14%;
+}
+.searchField{
+	width: 65%;
+	float: left;
+	margin-left: 16%;
+	margin-top: 6px;
+}
+.searchInitBtn{
+	float:left;
+	width:21px;
+	height:21px;
+	margin-top: 6px;
+	margin-left: 9px;
+}
+
+#beatUploadWindow{
+	float:left;
+	width: 50%;
+	height: 87%;
+	box-shadow: 0px 0px 3px black;
+	border-radius: 12px;
+	background: white;
+	margin-left: 22%;
+	margin-top: 3%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	display: none;
+	opacity: 0;
+	position: fixed;
+	z-index: 11;
+}
+.inputField{
+	float:left
+}
+.inputHeader{
+	float:left;
+	width: 80%;
+	color: #b88b45;
+	margin-bottom: 0px;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	margin-left: 10%;
+}
+.inputHeader3{
+	float:left;
+	width: 80%;
+	color: #b88b45;
+	margin-bottom: 0px;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	margin-left: 1%;
+}
+.inputHeader2{
+	float:left;
+	width: 80%;
+	color: grey;
+	margin-bottom: 0px;
+	font-weight: bolder;
+	font-size: 0.8rem;
+	margin-left: 10%;
+	margin-top: 2px
+}
+#instrumentsSelectedSection{
+	float:left;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+.vibeInsObj{
+	float:left;
+	height: 30px;
+	background: grey;
+	border-radius: 13px;
+}
+.vibeInsRemove{
+	float:left;
+	height: 28px;
+	width: 28px;
+	margin-left: 1px;
+}
+.vibeInsText{
+	float:left;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	margin-left: 4px;
+	margin-right: 16px;
+	color: white;
+	font-weight: bold;
+}
+.vibeInsObj2{
+	float:left;
+	height: 16px;
+	background: grey;
+	border-radius: 8px;
+}
+.vibeInsRemove2{
+	float:left;
+	height: 12px;
+	width: 12px;
+	margin-left: 2px;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 0px 0px 2px black;
+	margin-top: 2px;
+}
+.vibeInsText2{
+	float:left;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-left: 4px;
+	margin-right: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+.list-track-title{
+	float:left;
+	width: 100%;
+	font-weight: bolder;
+	color: #b88b45;
+	font-size: 1.0rem;
+	margin-top: 4px;
+	margin-bottom:0px
+}
+.list-track-producers{
+	float: left;
+  width: 100%;
+  color: grey;
+  font-size: 1.0rem;
+	margin-top: 1px;
+	margin-bottom:0px
+}
+.list-vibes-container{
+	float:left;
+	width: 100%;
+}
+.list-instruments{
+	float:left;
+	width: 100%;
+	font-size: 0.7rem;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+.list-command-buttons{
+	float:left;
+	width: 100%;
+}
+.request-changes-btn{
+	float:left;
+	border: 1px solid darkgreen;
+	color: darkgreen;
+	background: none;
+	font-size: 11px;
+	margin-left: 91%;
+}
+
+.fileNameDsp{
+	float:left;
+	width:60%;
+	margin-left:10%;
+	border: 1px solid black;
+	border-radius: 12px;
+	margin-top: 7px;
+}
+.fileNameText{
+	float:left;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 8px;
+}
+#fileUploadBtn{
+	float:left;
+	width: 40%;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0px 2px 5px black;
+	margin-left: 30%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background: #b88b45;
+	color: white;
+	font-size: 15px;
+	font-weight: bolder;
+}
+.browseBtn{
+	float:left;
+	width: 20%;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 7px;
+	margin-left: 10px;
+	background: none;
+	border: solid 4px black;
+	font-weight: bolder;
+}
+
+#sp-artworkHolder{
+	float:left;
+	width: 250px;
+	height: 250px;
+	border-radius: 12px;
+	box-shadow: 0px 2px 3px black;
+	margin-top: 5%;
+	overflow: hidden
+}
+#sp-details-section{
+	float:left;
+	width: 50%;
+	background:none;
+	margin-left: 4%;
+	height: 92%;
+	margin-top: 1%;
+}
+
+.sp-detail{
+	float:left;
+	width:80%;
+	margin-bottom: 0px;
+	margin-left: 1%;
+}
+
+#sp-vibes-dsp{
+	width:80%;
+	float:left;
+	margin-left: 1%;
+	margin-top: 5px;
+}
+
+#sp-ins-dsp{
+	width:80%;
+	float:left;
+	margin-left: 1%;
+	margin-top: 5px;
+}
+#sp-x1{
+	float:left;
+	width: 19%;
+	margin-left: 4%;
+}
+#sp-priceHeader{
+	 font-size: 2.2rem;
+	 margin-bottom: 0px;
+}
+#sp-priceValue{
+	 font-size: 2.0rem;
+	 width: 100%;
+	 float: left;
+	 margin-bottom: 0px;
+	 margin-top: 0px;
+	 font-weight: bolder;
+}
+#sp-buy-now{
+	float:left;
+	width: 70%;
+	height: 40px;
+	border-radius: 20px;
+	background: #b88b45;
+	border: none;
+	box-shadow: 0px 2px 6px black;
+	margin-top: 13%;
+}
+#uploadHeader{
+	margin-left: 41%;
+}
+#adSection3{
+	float: left;
+	width: 22%;
+	margin-top: 9%;
+}
+#sp-artwork{
+	width: 100%;
+	height: 100%
+}
+#lower-container{
+	width: 100%;
+	overflow-y: scroll;
+	float:left;
+	height: 98%;
+}
+/*Menus*/
+#nonUserMenu{
+	float:left;
+	width: 100%;
+	display: none;
+	opacity: 0
+}
+#userPresentMenu{
+	float:left;
+	width: 100%;
+	display: none;
+	opacity: 0;
+}
+#producerMenu{
+	float:left;
+	width: 100%;
+	display: none;
+	opacity: 0
+}
+#profileMenu{
+	float:left;
+	width: 100%;
+	display: none;
+	opacity: 0
+}
+.menu-item{
+	float: left;
+	width: 100%;
+	font-size: 1.0rem;
+	color: black;
+	font-family: Calibri;
+	margin-top: 15px;
+}
+.menu-item:hover{
+	font-size: 1.5rem;
+	color: #b88b45;
+}
+.menuHolder{
+	list-style-type: none
+}
+.initiator-profile-image-holder{
+	
+	float: left;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	box-shadow: 0px 2px 3px black;
+	margin-left: 36%;
+	margin-top: 2%;
+	overflow: hidden
+}
+.initiator-profile-image{
+	float: left;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	box-shadow: 0px 2px 3px black;
+	overflow: hidden
+}
+.cashLogo{
+	
+	float:left;
+	width: 40px;
+	height: 40px;
+	margin-top: 3%;
+	margin-left: 6%;
+	
+}
+.responder-profile-image-holder{
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	float: left;
+	margin-top: 2%;
+	margin-left: 6%;
+}
+.initiator-profile-image{
+	width: 100%;
+	height: 100%;
+}
+.header-tags{
+	width: 100%;
+	float:left
+}
+.initiator-tag{
+	float:left;
+	text-align: center;
+	width: 100px;
+	margin-left: 35%;
+}
+.responder-tag{
+	float:left;
+	text-align: center;
+	width: 100px;
+	margin-left: 14%;
+}
+.greyDivider{
+	float:left;
+	width: 100%;
+	height:2px;
+	background: grey
+}
+#cashLogo{
+	float:left;
+	width: 100px;
+	height: 100px;
+	margin-left:5%
+}
+.order-details-section{
+	float:left;
+	width: 100%;
+	height: 57%;
+	overflow-y: scroll
+}
+.ins-selected-header{
+	float:left;
+	margin-bottom:0px;
+	margin-top: 13px;
+	margin-left: 3%;
+	font-weight: bolder;
+	
+	color: #b88b45;
+	margin-right: 90%;
+}
+.ins-selected-header2{
+	float:left;
+	margin-bottom:0px;
+	margin-top: 24px;
+	margin-left: 3%;
+	font-weight: bolder;
+	
+	color: #b88b45;
+}
+.custom-order-instructions-input{
+	float:left;
+	width: 96%;
+	height:45%;
+	margin-top:8px;
+	margin-left: 2%
+}
+.customOrdersNote{
+	float:left;
+	width: 100%;
+	color:gray;
+	margin-top: 9px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 0.9rem;
+}
+.contact-details-holder{
+	width: 100%;
+	float:left
+}
+.xxx3{
+	float:right;
+	width: 20px;
+	margin-right: 2%;
+	margin-top: 1%;
+}
+#producer-reach-out{
+	float:right;
+	margin-top: 15px;
+	margin-right: 1%;
+	font-weight: bold;
+}
+#completeCustomOrder{
+	float:left;
+	width: 20%;
+	height: 40px;
+	border-radius: 20px;
+	box-shadow: 0px 2px 3px black;
+	color:white;
+	border: none;
+	margin-left:40%;
+	margin-top: 7%;
+	margin-bottom: 5%;
+	background: #b88b45;
+}
+.ins-collection-details{
+	float:left;
+	width: 100%;
+	height: 61%;
+	overflow-y:scroll
+}
+#files-available{
+	float:left;
+	width:100%;
+	margin-top: 1%;
+}
+.fileActualIcon{
+	float:left;
+	width: 88px;
+}
+.fileFormatText{
+	float:right;
+	background: #b88b45;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -13px;
+	width: 47px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+#x34{
+	margin-right: 88%;
+}
+.fileIcon{
+	float:left;
+	width: 88px;
+	margin-left: 2%;
+}
+.file-uploaded-name{
+	float:left;
+	font-size: 20px;
+	color: #b88b45;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	width: 90%;
+}
+.file-uploaded-date{
+	float:left;
+	font-size: 16px;
+	color: grey;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	width: 90%;
+}
+#downloadBtn{
+	float:left;
+	width: 40px;
+	margin-left: 30%;
+	margin-top: 2%
+}
+.downloadSection{
+	float:left;
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 9%;
+}
+#downloadBtn{
+	width: 47px;
+	float:left;
+	margin-left: 40%;
+	margin-top: 0px;
+}
+#downloadBtnText{
+	float:left;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	margin-left: 2%;
+	font-weight: bolder;
+	font-size: 24px;
+	color: #b88b45;
+}
+.order-number{
+	float:left;
+	width: 100%;
+	font-weight: bolder;
+	margin-bottom: 0px;
+	margin-top: 2px;
+	margin-left: 3%;
+	font-size: 25px;
+}
+
+#currencySelectorWindow{
+	float:left;
+	width: 30%;
+	height: 64%;
+	margin-top: 273%;
+	margin-left: 35%;
+	display: none;
+	opacity: 0;
+	position: fixed;
+	background: white;
+	box-shadow: 0px 2px 3px black;
+	border-radius: 12px;
+	overflow-y: scroll;
+	z-index: 18;
+}
+
+#currencySelectHeader{
+	float:left;
+	width: 100%;
+	margin-top: 14px;
+	margin-bottom: 0px;
+	color: #b88b45;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#currencyList{
+	float: left;
+	width: 100%;
+	height: 84%;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.currency-list-item{
+	float:left;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Calibri;
+}
+
+#processCompleteWindow{
+	float:left;
+	width: 50%;
+	height: 89%;
+	margin-left: 25%;
+	margin-top: 200%;
+	position: fixed;
+	z-index: 11;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0px 2px 7px black;
+	opacity: 0;
+	display: none;
+}
+#okayImage{
+	float:left;
+	width: 118px;
+	margin-top: 2%;
+	margin-left: 42%;
+}
+#message{
+	float:left;
+	width: 90%;
+	text-align: center;
+	color: #b88b45;
+	margin-left:5%;
+	font-size: 18px
+}
+#specialCode{
+	float:left;
+	float:left;
+	width: 90%;
+	text-align: center;
+	color: black;
+	margin-left:5%;
+	font-size: 24px;
+	font-weight: bolder;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#processDoneBtn{
+	float:left;
+	width: 30%;
+	text-align: center;
+	background: #b88b45;
+	margin-left:35%;
+	font-size: 24px;
+	color:white;
+	height: 40px;
+	border-radius: 20px;
+	margin-top: 2%;
+}
+#priceInputSection{
+	float:left;
+	width: 100%;
+	margin-top: 2%
+}
+#actualPriceSection{
+	float: left;
+	width: 300px;
+	margin-left: 62px;
+}
+#priceInput{
+	float:left;
+	height: 40px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 2px solid black;
+	margin-left: 2%;
+}
+#priceDropDown{
+	float:left;
+	width: 30px;
+	margin-top: 17px;
+	margin-left: 9px;
+}
+#freeBeatSect{
+	float: right;
+	margin-right: 8%;
+	width: 149px;
+	margin-top: 19px;
+}
+#freeBeatSwitch{
+	float:left;
+	width: 60px;
+	height:30px;
+	border-radius: 15px;
+	background: grey;
+	margin-left: 6%;
+}
+#freeBeatActuator{
+	float:left;
+	width:30px;
+	height: 30px;
+	border-radius:15px;
+	box-shadow: 0px 0px 3px black;
+	background: linear-gradient(135deg, lightgray 30%, white 80%);
+}
+#currencyDsp{
+	float:left;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	margin-left: 6px;
+}
+#freeBeatIndicator{
+	float:left;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	margin-top: 2px;
+	color: grey;
+	margin-bottom: 0px;
+}
+#pIndicator{
+	float:left;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	margin-top: 5px;
+	color: grey;
+	margin-bottom: 0px;
+}
+#pSect{
+	float: right;
+	margin-right: 4%;
+	width: 204px;
+	margin-top: 19px;
+}
+#pSwitch{
+	float:left;
+	width: 60px;
+	height:30px;
+	border-radius: 15px;
+	background: grey;
+	margin-left: 6%;
+}
+#pActuator{
+	float:left;
+	width:30px;
+	height: 30px;
+	border-radius:15px;
+	box-shadow: 0px 0px 3px black;
+	background: linear-gradient(135deg, lightgray 30%, white 80%);
+}
+#agreeSection{
+	float:left;
+	width: 100%;
+	margin-top:2%
+}
+#agreeSect{
+	float: right;
+	margin-right: 4%;
+	width: 400px;
+	margin-top: 19px;
+}
+#agreeIndicator{
+	float:left;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	margin-top: 5px;
+	color: grey;
+	margin-bottom: 0px;
+}
+#agreeSwitch{
+	float:left;
+	width: 60px;
+	height:30px;
+	border-radius: 15px;
+	background: grey;
+	margin-left: 6%;
+}
+#agreeActuator{
+	float:left;
+	width:30px;
+	height: 30px;
+	border-radius:15px;
+	box-shadow: 0px 0px 3px black;
+	background: linear-gradient(135deg, lightgray 30%, white 80%);
+}
+#addStemsSection{
+	float: right;
+	margin-right: 0%;
+	width: 300px;
+	margin-top: 19px;
+}
+#addStemsSect{
+	float: right;
+	margin-right: 8%;
+	width: 219px;
+	margin-top: 19px;
+}
+#addStemsIndicator{
+	float:left;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	margin-top: 4px;
+	color: grey;
+	margin-bottom: 0px;
+}
+#addStemsSwitch{
+	float:left;
+	width: 60px;
+	height:30px;
+	border-radius: 15px;
+	background: grey;
+	margin-left: 6%;
+}
+#addStemsActuator{
+	float:left;
+	width:30px;
+	height: 30px;
+	border-radius:15px;
+	box-shadow: 0px 0px 3px black;
+	background: linear-gradient(135deg, lightgray 30%, white 80%);
+}
+#noInstrumentalHeader{
+	float:left;
+	width: 100%;
+	font-weight: bolder;
+	color: gray;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	text-align: center;
+	display: none;
+}
+
+#loginWndow{
+	float:left;
+	border-radius: 12px;
+	margin-top: 300%;
+	background: white;
+	box-shadow: 0px 2px 3px black;
+	width: 50%;
+	height: 55%;
+	opacity: 0;
+	display: none;
+	margin-left: 22%;
+	position: fixed;
+	z-index: 14;
+}
+
+#loginIns{
+	float:left;
+	width: 100%;
+	font-size: 18px;
+	color: grey;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 0px
+}
+.loginInputField{
+	float:left;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 24px;
+	border-radius: 12px;
+	border: 1px solid black;
+	height: 40px;
+}
+#loginInit{
+	float:left;
+	width: 40%;
+	height: 40px;
+	border-radius: 12px;
+	background: #b88b45;
+	margin-left: 30%;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	margin-top: 6%;
+	border: none;
+	box-shadow: 0px 2px 3px black;
+}
+#forgotBtn{
+	float:left;
+	width: 100%;
+	margin-top: 4%;
+	text-align: center;
+	color: #b88b45;
+	font-weight: bold;
+}
+#credIns{
+	float:left;
+	width: 100%;
+	font-size: 16px;
+	color: grey;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 0px
+}
+#changeCredentialsWindow{
+	float:left;
+	border-radius: 12px;
+	margin-top: 300%;
+	background: white;
+	box-shadow: 0px 2px 3px black;
+	width: 50%;
+	height: 55%;
+	opacity: 0;
+	display: none;
+	margin-left: 22%;
+	position: fixed;
+	z-index: 14;
+}
+#credentialsProceed{
+	float:left;
+	width: 40%;
+	height: 40px;
+	border-radius: 12px;
+	background: #b88b45;
+	margin-left: 30%;
+	color: white;
+	font-weight: bolder;
+	font-size: 15px;
+	margin-top: 6%;
+	border: none;
+	box-shadow: 0px 2px 3px black;
+	font-family: Calibri;
+}
+
+#secondField{
+	display: none
+}
+#cartMenu{
+	float:left;
+	width: 100%
+}
+#producerTrackMenu{
+	float:left;
+	width: 100%
+}
+#shoppingCartHolder{
+	float:left;
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	margin-left: 93%;
+	border-radius: 50px;
+	border: none;
+	box-shadow: 0px 2px 3px black;
+	background: white;
+	z-index: 19;
+	margin-top: 35%;
+}
+#shoppingCartBtn{
+	width: 46px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#shopCartTotalHeader{
+	float:right;
+	font-weight: bolder;
+	color: #b88b45;
+	font-size: 2pc;
+	font-family: Calibri;
+	margin-right: 2%;
+	margin-top: 13px;
+	margin-bottom: 0px;
+	margin-left: 80%;
+}
+#shopCartTotalValue{
+	float:right;
+	font-weight: bolder;
+	color: black;
+	font-size: 3pc;
+	font-family: Calibri;
+	margin-right: 2%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 80%;
+}
+#shopCartList{
+	float:left;
+	width: 100%;
+	margin-top: 2%;
+}
+#shopCartProceed{
+	float:left;
+	width: 20%;
+	height: 40px;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 2px 3px black;
+	background: #b88b45;
+	color: white;
+	font-weight: bolder;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 40%;
+}
+#shopCartSection{
+	float:left;
+	width: 100%;
+	opacity: 0;
+	display: none;
+	overflow-y: scroll;
+}
+#previousPage{
+	float:left;
+	width: 30px;
+	margin-top: 13px;
+	margin-left: 1%;
+}
+#aboutUsSection{
+	float: left;
+	width: 65%;
+	height: 70%;
+	margin-top: 3%;
+	margin-left: 17.5%;
+	box-shadow: 0px 2px 4px black;
+	border-radius: 12px;
+	display: none;
+	opacity: 0;
+	overflow-y: scroll;
+	background: white;
+}
+#aboutUsHeader{
+	float:left;
+	width: 100%;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	color: #b88b45;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 0px;
+}
+#aboutUsDivider{
+	float: left;
+	width: 80%;
+	height: 3px;
+	border-radius: 1.5px;
+	margin-left: 10%;
+	margin-top: 2%;
+	background: #b88b45;
+}
+#aboutUsContent{
+	float:left;
+	width: 80%;
+	font-size: 16px;
+	color: black;
+	margin-left: 10%;
+}
+#signature{
+	float:left;
+	width: 100px;
+	margin-right: 11%;
+	margin-left: 12%;
+	margin-top: 7%;
+}
+#founderImageHolder{
+	float:right;
+	width: 30%;
+}
+#founderFrame{
+	float:left;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	box-shadow: 0px 2px 3px black;
+	overflow: hidden;
+	margin-left: 20%;
+}
+#founderImage{
+	float:left;
+	width: 100%;
+	height: 100%
+}
+#founderName{
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	color:#b88b45;
+}
+
+#prefCurrencySection{
+	float:left;
+	width: 100%;
+}
+#prefCurrencyDropDown{
+	float:left;
+	width: 20px;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+#prefCurrencyText{
+	float:left;
+	font-weight: bolder;
+	color: black;
+	font-size: 20px;
+	margin-left: 1%;
+	margin-top: 11px;
+	margin-bottom: 0px;
+}
+#tcBtn{
+	color:#b88b45
+}
+
+#termsAndConditions{
+	float: left;
+	width: 65%;
+	height: 85%;
+	margin-top: 3%;
+	margin-left: 17.5%;
+	box-shadow: 0px 2px 4px black;
+	border-radius: 12px;
+	display: none;
+	opacity: 0;
+	overflow-y: scroll;
+	background: white;
+	position: fixed;
+	z-index: 18
+}
+#tcHeader{
+	float:left;
+	width: 100%;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	color: #b88b45;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 0px;
+}
+#tcDivider{
+	float: left;
+	width: 80%;
+	height: 3px;
+	border-radius: 1.5px;
+	margin-left: 10%;
+	margin-top: 2%;
+	background: #b88b45;
+}
+#tcContent{
+	float:left;
+	width: 80%;
+	font-size: 16px;
+	color: black;
+	margin-left: 10%;
+}
+#timveka{
+	float:left;
+	width: 120px;
+	margin-left: 2%;
+	margin-top: 20px;
+	margin-left: 40%;
+}

@@ -1,0 +1,30 @@
+{
+	"userId":null,
+	"dob":{
+		"date":null,
+		"month":null,
+		"year":null
+	},
+	"dateCreated":{
+		"date":null,
+		"month":null,
+		"year":null
+	},
+	"addressDetails"{
+		"resAddOne":null,
+		"resAddTwo":null,
+		"resAddThree":null,
+		"city":null,
+		"region":null,
+		"country":null,
+		"zipCode":null
+	},
+	"accountType":"User",
+	"purchases":[],
+	"customOrders":[],
+	"catalogue":[],
+	"contactNumber":null,
+	"emailAddress":null,
+	"password":null,
+	"preferredCurrency":null
+}
