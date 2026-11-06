@@ -433,6 +433,7 @@ app.get('/get-all-tracks', async(request,response)=>{
 app.get('/healthz', (req, res) => {
     res.status(200).send('OK');
 });
+
 app.listen(port, HOST, () => {
     console.log(`Server running on port ${port}`);
 })
