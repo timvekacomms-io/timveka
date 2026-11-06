@@ -431,5 +431,5 @@ app.get('/get-all-tracks', async(request,response)=>{
 })
 
 app.listen(port, HOST, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${port}`);
 })
