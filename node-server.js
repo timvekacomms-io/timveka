@@ -400,8 +400,7 @@ app.post("/search-tracks", async(request,response)=>{
 		
 		response.send(JSON.stringify({"status":"success","data":process}))
 		
-	}catch(error){
-		console.log(error)
+	}catch{
 		response.send(JSON.stringify({"status":"server-error"}))
 	}
 })
@@ -413,8 +412,8 @@ app.post("/get-track", async(request,response)=>{
 		let stream = fs.createReadStream(__dirname+`/Beats/${track.id}.mp3`)
 		stream.pipe(response)
 		
-	}catch(error){
-		console.log(error)
+	}catch{
+		
 		response.sendStatus(404)
 	}
 })
@@ -426,8 +425,8 @@ app.get('/get-all-tracks', async(request,response)=>{
 		let tracks = getTracks.body 
 		response.send(JSON.stringify({"tracks":tracks}))
 		
-	}catch(error){
-		console.log(error)
+	}catch{
+		
 		response.send(JSON.stringify({"status":"server-error"}))
 	}
 })
