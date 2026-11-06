@@ -1,57 +1,31 @@
 {
-  "name": "timveka",
+  "name": "new-beat-store",
   "version": "1.0.0",
-  "description": "# Server servicing Criterian Developer Android App",
-  "keywords": [
-    "timveka"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com"
-  ],
-  "bugs": {
-    "url": "https://github.com/issues"
-  },
-  "homepage": "https://github.com#readme",
-  "license": "ISC",
-  "author": "Criterion Programming",
-  "type": "module",
+  "description": "",
   "main": "node-server.js",
   "scripts": {
     "start": "node node-server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timvekacomms-io/timveka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/timvekacomms-io/timveka/issues"
+  },
+  "homepage": "https://github.com/timvekacomms-io/timveka#readme",
   "dependencies": {
-    "@cozycodr/lipila": "^0.1.0",
-    "@octokit/rest": "^22.0.1",
-    "axios": "^1.7.7",
-    "base-64": "^1.0.0",
-    "body-parser": "^1.20.3",
-    "bson": "5.0.0",
-    "config": "^3.3.12",
-    "dotenv": "^16.6.1",
-    "express": "^4.21.1",
-    "express-fileupload": "^1.5.1",
-    "get-video-dimensions": "^1.0.0",
-    "mongodb": "^5.1.0",
-    "mongoose": "^7.8.11",
-    "move-file": "^3.1.0",
+    "body-parser": "^2.4.0",
+    "express": "^5.3.0",
+    "mongodb": "^7.8.0",
+    "move-file": "^4.1.0",
     "mv": "^2.1.1",
     "node-fetch": "^3.3.2",
-    "nodemailer": "^9.0.3",
-    "nodemon": "^3.1.7",
-    "octokit": "^5.0.5",
-    "openai": "^6.42.0",
-    "readable-stream": "^4.7.0",
-    "socket.io": "^4.8.1",
-    "webpack": "^5.96.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.25.9",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "webpack-cli": "^5.1.4"
-  },
-  "engines": {
-    "node": ">=22.0.0"
+    "nodemailer": "^10.3.1",
+    "socket.io": "^4.8.4"
   }
 }
